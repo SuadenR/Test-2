@@ -35,9 +35,11 @@ const cart = [
 
 //CODE HERE
 
+const totalPrice = cart.reduce((acc, food) => {
+    return acc + food.price;
+}, 0);
 
-
-// const summedPrice = cart.reduce(sum)
+//const summedPrice = cart.reduce(sum)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -57,7 +59,10 @@ const cart = [
 
 //CODE HERE
 
-
+function calcFinalPrice(cart, couponValue, tax) {
+    cartTotal = (cart + tax) - couponValue
+    return cartTotal
+}
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -80,7 +85,7 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+I created an object with the name seatingChart in the perspective of a restaurant seating customers on a waiting list. I chose name (string), party size (number), kids (number) (for booster seats), and an inside boolean (incase there are outside seating options). This will ensure we seperate parties respectively while creating enough seats and booster seats needed. We will know who to call next and their expected party size in order to create a table for them.
 
 */
 
@@ -90,3 +95,10 @@ const cart = [
 */
 
 //CODE HERE
+
+let seatingChart = {
+    name: "Wilson",
+    partysize: 5,
+    kids: 0,
+    inside: true
+}

@@ -31,10 +31,7 @@
 
 //CODE HERE
 
-class Ticket {
-    constructor(items, orderTimes)
 
-}
 
 
 
