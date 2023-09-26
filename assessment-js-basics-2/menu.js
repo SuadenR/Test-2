@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+var object = {
+    name: '',
+    price: 23,
+    catagory: '',
+    popularity: 23,
+    rating: 23,
+    tags:['']
+    
+}
 
 
 //////////////////PROBLEM 2////////////////////

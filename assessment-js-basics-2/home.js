@@ -23,9 +23,7 @@
 
 //CODE HERE
 
-
-
-
+let greetUser = (username) => 'Welcome back,'+ username
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -51,6 +49,12 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+function canWedeliver (zipcode) {
+    let (i = 0, i < zipcode.length, i++)
+    if (zipcode[i] === zipcode)
+    return `Sorry, we can't deliver to that address` 
+            else
+            return `You're in our delivery zone!` }
 
 
 /* 
@@ -108,6 +112,7 @@ const deals = [
 
 //CODE HERE
 
+let discount = title.replace('10% Off!')
 
 
 /*
@@ -124,3 +129,5 @@ const deals = [
 */
 
 //CODE HERE
+
+let newDeal = desc.replace("This deal lasts until the end of April!")
