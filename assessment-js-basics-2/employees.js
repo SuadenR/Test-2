@@ -98,15 +98,15 @@ empTwo.name = 'Nick'
 //CODE HERE
 
 class Manager extends Employee {
-    constructor(name, string,  shifts, employees) {
-        super(name, string,  shifts)
-        this.employees = [employees]
+    constructor(name, shifts, employees) {
+        super(name, shifts)
+        this.employees = employees
     }
     getEmployees() {
         console.log(this.name,'manages', this.employees)
     }
     addEmployee() {
-        this.employees.push(this.name)
+        this.employees.push()
     }
 }
 
@@ -123,7 +123,7 @@ class Manager extends Employee {
 
 //CODE HERE
 
-let manager1 = new Manager('Winston', 'works on', 'weekday mornings and weekday afternoons', 'Cece and Schmidt')
+let manager1 = new Manager('Winston', 'works on', 'weekday mornings and weekday afternoons',  ['Cece', 'Schmidt'])
 
 /*
     Call the `getEmployees` method on the

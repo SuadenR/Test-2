@@ -23,7 +23,7 @@
 
 //CODE HERE
 
-let greetUser = (username) => 'Welcome back,'+ username
+let greetUser = (username) => 'Welcome back, '+ username
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -50,13 +50,13 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 function canWedeliver (zipcode) {
-    let (i = 0, i < zipcode.length, i++)
+    for (let i = 0; i < zipcode.length; i++) {
     if (zipcode[i] === zipcode)
     return `Sorry, we can't deliver to that address` 
-            else
-            return `You're in our delivery zone!` }
-
-
+            else 
+            return `You're in our delivery zone!` }{
+    }
+}
 /* 
     Problem 2 Continued
 
@@ -75,6 +75,7 @@ function canWedeliver (zipcode) {
 */
 
 // CODE HERE
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -112,8 +113,7 @@ const deals = [
 
 //CODE HERE
 
-let discount = title.replace('10% Off!')
-
+let discount = deals[0].title.replace('10% Off!')
 
 /*
     The restaurant is going to continue its

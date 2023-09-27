@@ -36,11 +36,12 @@ class Ticket {
         this.items = items
         this.orderTime = orderTime
         this.customerID = customerID
+        this.status = 'queued'
     }
 
-    updateStatus(newstatus) {
-        this.newstatus = this.status 
-        console.log('The-order-for-customer', this.customerID, 'is-now', this.newstatus)
+    updateStatus(newStatus) {
+        this.status = newStatus 
+        console.log('The-order-for-customer', this.customerID, 'is-now', this.status)
     }
 }
 
@@ -69,4 +70,4 @@ let firstTicket = new Ticket('pizza', '7:03 PM', 575)
 
 //CODE HERE
 
-updateStatus(firstTicket)
+firstTicket.updateStatus('cooking')

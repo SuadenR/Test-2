@@ -32,13 +32,13 @@
 
 //CODE HERE
 
-var object = {
-    name: '',
+var pizza = {
+    name: 'pepperoni',
     price: 23,
-    catagory: '',
+    catagory: 'food',
     popularity: 23,
     rating: 23,
-    tags:['']
+    tags:['i have no idea']
     
 }
 
@@ -53,6 +53,7 @@ var object = {
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -62,6 +63,7 @@ var object = {
 */
 
 //CODE HERE
+
 
 
 /*
