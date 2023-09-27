@@ -36,8 +36,8 @@ var pizza = {
     name: 'pepperoni',
     price: 23,
     catagory: 'food',
-    popularity: 23,
-    rating: 23,
+    popularity: 25,
+    rating: 27,
     tags:['i have no idea']
     
 }
@@ -64,7 +64,7 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
-
+console.log(pizza.tags)
 
 /*
     Third, destructure the price off of the
@@ -74,6 +74,10 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
+
+let newPrice = pizza.price;
+
+console.log(newPrice)
 
 
 /*
@@ -85,6 +89,9 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
+let newCatagory = pizza.catagory;
+
+console.log(newCatagory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -100,7 +107,9 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
+const foodArr = [pizza.name, pizza.price, pizza.catagory, pizza.popularity, pizza.rating]
 
+console.log(foodArr)
 
 //////////////////PROBLEM 4////////////////////
 /* 
