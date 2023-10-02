@@ -39,7 +39,7 @@ const totalPrice = cart.reduce((acc, food) => {
     return acc + food.price;
 }, 0);
 
-//const summedPrice = cart.reduce(sum)
+const summedPrice = cart.reduce(sum)
 
 
 //////////////////PROBLEM 2////////////////////

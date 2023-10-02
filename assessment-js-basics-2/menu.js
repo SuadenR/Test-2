@@ -125,7 +125,7 @@ console.log(foodArr)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter()
 
 
 
