@@ -38,7 +38,7 @@ var pizza = {
     catagory: 'food',
     popularity: 25,
     rating: 27,
-    tags:['i have no idea']
+    tags:['gluten-free', 'kids']
     
 }
 
@@ -64,7 +64,7 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
-console.log(pizza.tags)
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -75,9 +75,9 @@ console.log(pizza.tags)
 
 //CODE HERE
 
-let newPrice = pizza.price;
+let {price} = pizza
 
-console.log(newPrice)
+console.log(price)
 
 
 /*
@@ -89,9 +89,9 @@ console.log(newPrice)
 
 //CODE HERE
 
-let newCatagory = pizza.catagory;
+let {catagory} = pizza
 
-console.log(newCatagory)
+console.log(catagory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -100,14 +100,55 @@ console.log(newCatagory)
     Call the array `foodArr`.
 
     Make sure that they have slightly different
-    values for price, popularity, rating, and
+    values for price, populariCty, rating, and
     tags. That way, you'll be able to use this
     data in some functions that you'll write.
 */
 
 //CODE HERE
 
-const foodArr = [pizza.name, pizza.price, pizza.catagory, pizza.popularity, pizza.rating]
+const foodArr = [
+    {
+        name: 'pepperoni',
+        price: 29,
+        catagory: 'food',
+        popularity: 50,
+        rating: 75,
+        tags:['gluten-free', 'favorite']
+    },
+    {
+        name: 'ham',
+        price: 21,
+        catagory: 'food',
+        popularity: 20,
+        rating: 90,
+        tags:['gluten-free', 'kids']
+    },
+    {
+        name: 'sausage',
+        price: 10,
+        catagory: 'food',
+        popularity: 2,
+        rating: 65,
+        tags:['gluten', 'favorite']
+    },
+    {
+        name: 'pineapple',
+        price: 15,
+        catagory: 'food',
+        popularity: 100,
+        rating: 100,
+        tags:['gluten-free', 'favorite']
+    },
+    {
+        name: 'salami',
+        price: 55,
+        catagory: 'food',
+        popularity: 76,
+        rating: 92,
+        tags:['gluten', 'adult']
+    },
+]
 
 console.log(foodArr)
 
@@ -125,8 +166,13 @@ console.log(foodArr)
 
 //CODE HERE
 
-const filteredFood = foodArr.filter()
+const filteredFood = foodArr.filter((pizza) => {
+    if(pizza.tags.includes('gluten')){
+        return pizza
+    }
+});
 
+console.log(filteredArr);
 
 
 //////////////////PROBLEM 5////////////////////
@@ -170,6 +216,16 @@ const filteredFood = foodArr.filter()
 
 //CODE HERE
 
+function filterByProperty(property, number, type) {
+    let fArray = foodArr.filter((pizza) => {
+        if(type === 'above'){
+            if(pizza.property > number){
+                return pizza
+            }
+        }
+    }
+)
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -179,3 +235,7 @@ const filteredFood = foodArr.filter()
 */
 
 //CODE HERE
+
+filterByProperty(pizza, 50, above)
+
+console.log(filterByProperty)
